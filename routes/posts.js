@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const {body,validationResult} = require('express-validator')
-
+//RAFAEL
 // untuk import database
 const connect = require('../config/db')
 
@@ -46,7 +46,7 @@ router.post('/store',[
         gender: req.body.gender,
         sword: req.body.sword,
         village: req.body.village,
-        description: req.body.description,
+        description: req.body.description,  
     }
 
     //memasukan query
