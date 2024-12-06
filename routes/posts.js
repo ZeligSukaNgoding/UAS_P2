@@ -66,7 +66,7 @@ router.post('/store',[
         }else{
             return res.status(201).json({
                 status:true,
-                message:'Data input Successfully'
+                message:'Data input Successfully',
             })
         }
     })
