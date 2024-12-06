@@ -64,7 +64,6 @@ router.post('/store',[
             })
         }
     })
-
 })
 
 //detail data
