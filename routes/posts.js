@@ -30,6 +30,9 @@ router.post('/store',[
     body('gender').notEmpty(),
     body('sword').notEmpty(),
     body('village').notEmpty(),
+    body('jutsu').notEmpty(),
+    body('abilities').notEmpty(),
+    body('team').notEmpty(),
     body('description').notEmpty(),
 
 ],(req,res)=> {
@@ -46,6 +49,9 @@ router.post('/store',[
         gender: req.body.gender,
         sword: req.body.sword,
         village: req.body.village,
+        jutsu: req.body.jutsu,
+        abilities: req.body.abilities,
+        team: req.body.team,
         description: req.body.description,  
     }
 
@@ -102,6 +108,9 @@ router.patch('/update/:id',[
     body('gender').notEmpty(),
     body('sword').notEmpty(),
     body('village').notEmpty(),
+    body('jutsu').notEmpty(),
+    body('abilities').notEmpty(),
+    body('team').notEmpty(),
     body('description').notEmpty(),
 
 ],(req,res)=>{
@@ -119,6 +128,9 @@ router.patch('/update/:id',[
         gender: req.body.gender,
         sword: req.body.sword,
         village: req.body.village,
+        jutsu: req.body.jutsu,
+        abilities: req.body.abilities,
+        team: req.body.team,
         description: req.body.description,
     }
 
