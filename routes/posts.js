@@ -3,6 +3,7 @@ const router = express.Router()
 const {body,validationResult} = require('express-validator')
 //RAFAEL
 // untuk import database
+//HALO NAMA SAYA RAFAEL
 const connect = require('../config/db')
 
 // view
