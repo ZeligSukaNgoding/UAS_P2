@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    background-image: url(background.webp);
+    background-image: url(/image/background.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

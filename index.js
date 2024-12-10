@@ -14,13 +14,13 @@ app.use(bodyParser.json());
 const postsRouter = require('./routes/posts');
 app.use('/api/posts', postsRouter);
 
-// Route to serve the main HTML page
+// Routing ke server HTML page
 app.get('/', (req, res) => {
     const filePath = path.join(__dirname, 'public', 'design.html');
-    console.log(`Berhasil Update: ${filePath}`); // Log the file path
+    console.log(`Berhasil Update: ${filePath}`); // Arah ke path yang dituju
     res.sendFile(filePath, (err) => {
         if (err) {
-            console.error('Error sending file:', err); // Log any errors
+            console.error('Error sending file:', err); // Pemberitahuan error
             res.status(err.status).end();
         }
     });
