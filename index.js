@@ -17,7 +17,7 @@ app.use('/api/posts', postsRouter);
 // Route to serve the main HTML page
 app.get('/', (req, res) => {
     const filePath = path.join(__dirname, 'public', 'design.html');
-    console.log(`Attempting to send file: ${filePath}`); // Log the file path
+    console.log(`Berhasil Update: ${filePath}`); // Log the file path
     res.sendFile(filePath, (err) => {
         if (err) {
             console.error('Error sending file:', err); // Log any errors
