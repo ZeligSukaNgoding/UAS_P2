@@ -6,7 +6,6 @@ const path = require('path');
 
 // Middleware to serve static files
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -20,7 +19,7 @@ app.get('/', (req, res) => {
     console.log(`Berhasil Update: ${filePath}`); // Arah ke path yang dituju
     res.sendFile(filePath, (err) => {
         if (err) {
-            console.error('Error sending file:', err); // Pemberitahuan error
+            console.error('Error sending file:', err);
             res.status(err.status).end();
         }
     });
